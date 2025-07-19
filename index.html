@@ -3,55 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>АнтиДолг — Помощь с долгами</title>
+  <title>AntiDolg.kz — Помощь с долгами</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/891/891462.png" type="image/png" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: #004aad;
       color: white;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 30px 20px;
       text-align: center;
     }
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      max-width: 400px;
-      width: 90%;
+    h1 { margin: 0; font-size: 32px; }
+    p.lead { font-size: 18px; margin-top: 10px; }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    h1 {
-      margin-bottom: 20px;
+
+    .form-section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    p {
-      margin-bottom: 30px;
+
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .form-section button {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
       font-size: 16px;
     }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #28a745;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
+
+    .form-section button:hover {
+      background: #00327a;
     }
-    a.button:hover {
-      background-color: #218838;
+
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .review {
+      background: white;
+      padding: 15px;
+      border-left: 5px solid #004aad;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004aad;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>АнтиДолг</h1>
-    <p>Юридическая помощь по долгам и кредитам в Казахстане</p>
-    <a class="button" href="https://t.me/antidolg_kz_bot" target="_blank">Связаться в Telegram</a>
-  </div>
+
+  <header>
+    <h1>AntiDolg.kz</h1>
+    <p class="lead">Снимаем арест, отменяем исполнительную надпись — всё по закону</p>
+  </header>
+
+  <section class="section form-section">
+    <h2>Оставить заявку</h2>
+    <form action="https://t.me/antidolg_kz_bot" method="get" target="_blank">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон или WhatsApp" required />
+      <textarea name="message" placeholder="Кратко опишите вашу ситуацию" rows="4" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Отзывы клиентов</h2>
+    <div class="reviews">
+      <div class="review">
+        ✅ Спасибо! Арест сняли за 2 дня. Очень отзывчивые специалисты. <br />— Айгуль, г. Алматы
+      </div>
+      <div class="review">
+        ✅ Помогли отменить исполнительную надпись — теперь могу спать спокойно! <br />— Марат, г. Астана
+      </div>
+      <div class="review">
+        ✅ Всё чётко по закону, без обмана. Спасибо за профессионализм! <br />— Сауле, г. Шымкент
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 AntiDolg.kz — Помощь с долгами по закону
+  </footer>
+
 </body>
 </html>
