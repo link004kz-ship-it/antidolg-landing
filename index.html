@@ -2,48 +2,56 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>АнтиДолг KZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АнтиДолг — Помощь с долгами</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f4f4f4;
-      color: #333;
-      max-width: 600px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 90%;
+    }
     h1 {
-      color: #0077cc;
+      margin-bottom: 20px;
     }
-    .btn {
+    p {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    a.button {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 24px;
-      background: #28a745;
+      background-color: #28a745;
       color: white;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .btn:hover {
-      background: #218838;
+    a.button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Помогаем избавиться от долгов 💼</h1>
-    <p>Наши юристы помогут вам снять аресты, закрыть исполнительные производства и защитить ваши права.</p>
-    <p>Работаем законно, быстро и с гарантией результата!</p>
-    <a href="https://t.me/antidolg_kz_bot" class="btn">Связаться с нами в Telegram</a>
+  <div class="container">
+    <h1>АнтиДолг</h1>
+    <p>Юридическая помощь по долгам и кредитам в Казахстане</p>
+    <a class="button" href="https://t.me/antidolg_kz_bot" target="_blank">Связаться в Telegram</a>
   </div>
 </body>
 </html>
