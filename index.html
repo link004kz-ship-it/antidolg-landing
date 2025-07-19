@@ -1,109 +1,127 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AntiDolg — Решение по долгам</title>
-  <meta name="description" content="Снимаем аресты, отменяем исполнительные надписи — всё строго по закону. Надёжная помощь должникам в Казахстане.">
-  <meta property="og:title" content="AntiDolg — Решение по долгам">
-  <meta property="og:description" content="Снимаем аресты, отменяем исполнительные надписи. Всё по закону. Получите бесплатную консультацию.">
-  <meta property="og:image" content="https://link004kz-ship-it.github.io/antidolg-landing/logo.png">
-  <meta property="og:url" content="https://link004kz-ship-it.github.io/antidolg-landing/">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AntiDolg – Юридическая помощь</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="description" content="AntiDolg – Помогаем избавиться от долгов законным способом. Бесплатная консультация юриста.">
+  <meta property="og:title" content="AntiDolg – Юридическая помощь" />
+  <meta property="og:description" content="Избавьтесь от долгов по закону. Бесплатная консультация!" />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
+      font-family: "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
+      background: #f7f8fa;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .logo {
-      max-width: 150px;
-      margin: 0 auto;
-    }
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    form {
-      max-width: 400px;
-      margin: 0 auto;
       background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    input, textarea, button {
+    header img {
+      max-width: 160px;
+      height: auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .form h2 {
+      margin-top: 0;
+    }
+    input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 10px;
       border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
+      border-radius: 8px;
+      font-size: 1rem;
     }
     button {
-      background: #4CAF50;
-      color: #fff;
+      background: #2b72ff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1rem;
       border: none;
+      border-radius: 8px;
+      margin-top: 15px;
       cursor: pointer;
     }
+    button:hover {
+      background: #1556dd;
+    }
     .reviews {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
     .review {
-      background: #fff;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-left: 5px solid #4CAF50;
+      margin-bottom: 1.2rem;
+      border-left: 3px solid #2b72ff;
+      padding-left: 1rem;
     }
     footer {
-      background: #222;
-      color: #aaa;
       text-align: center;
-      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="AntiDolg" class="logo">
-    <h2>AntiDolg — помощь с долгами по закону</h2>
-  </header>  <section class="hero">
-    <h1>Снимаем аресты и отменяем исполнительные надписи</h1>
-    <p>Безопасно. Законно. Конфиденциально. Получите бесплатную консультацию прямо сейчас!</p>
-  </section>  <form action="https://formspree.io/f/mnqepovj" method="POST">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="tel" name="phone" placeholder="Телефон или WhatsApp" required>
-    <textarea name="message" placeholder="Ваш вопрос или ситуация" rows="4"></textarea>
-    <button type="submit">Отправить заявку</button>
-  </form>  <section class="reviews">
+    <img src="logo.png" alt="AntiDolg Logo" />
+    <h1>AntiDolg – Помощь в списании долгов</h1>
+    <p>Все действия строго по закону: отмена исполнительной надписи, снятие арестов и др.</p>
+  </header>
+
+  <section class="form">
+    <h2>Бесплатная консультация</h2>
+    <form>
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
+      <textarea name="comment" rows="4" placeholder="Комментарий (необязательно)"></textarea>
+      <button type="submit">Оставить заявку</button>
+    </form>
+  </section>
+
+  <section class="reviews">
     <h2>Отзывы клиентов</h2>
     <div class="review">
-      <strong>Алия, Алматы:</strong>
-      <p>Спасибо AntiDolg! Сняли арест за 3 дня, всё сделали грамотно и без стресса.</p>
+      <strong>Айнура:</strong> Спасибо AntiDolg! Списали долги и сняли арест с карты.
     </div>
     <div class="review">
-      <strong>Нурбол, Астана:</strong>
-      <p>У меня была исполнительная надпись, даже не знал об этом. Ребята помогли, всё объяснили, отменили по закону!</p>
+      <strong>Жанат:</strong> Обратился через форму, перезвонили сразу. Очень грамотный юрист.
     </div>
-  </section>  <footer>
-    <p>&copy; 2025 AntiDolg.kz — Помощь с долгами в РК. Не используем госсимволику. Работаем по законодательству РК.</p>
+    <div class="review">
+      <strong>Нуржан:</strong> Помогли закрыть дело в суде. Всё по закону.
+    </div>
+  </section>
+
+  <footer>
+    © 2025 AntiDolg. Все права защищены.
   </footer>
+
 </body>
 </html>
